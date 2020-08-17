@@ -15,20 +15,26 @@
 }
 
 .background {
-  background-color: #7555e0;
+  background-color: white;
 }
 
 header {
   width: 100%;
-  height: 4rem;  
-}
-
- .logo h1 {
-   padding-top: 0.35rem;
-  font-family: 'Baloo Tamma 2';
-  color: white;
+  height: 6rem;  
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+}
+
+ .logo {
+   max-height: 11rem;
+   width: 20rem;
 }
 
 #sections {
@@ -36,16 +42,39 @@ header {
   flex-direction: row;
 }
 
-
-
 .content {
-  background-color: brown;
+  background-color: #f4f4f4;
   height: 100vh;
   width: 50%;
 }
 
 .form {
-  background-color: aqua;
+  background-color: #5F45B3;
   height: 100vh;
   width: 50%;
+}
+
+@media (max-width:600px) {
+  #landing-content {
+    min-width: 600px;
+  }
+
+  header {
+    max-width: 100vw;
+  }
+
+  #sections {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100vw;
+    height: 20rem;
+  }
+
+  .form {
+    width: 100vw;
+    height: 20rem;
+  }
 }
