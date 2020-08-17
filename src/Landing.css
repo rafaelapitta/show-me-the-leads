@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap');
 /* LATO */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* KULIM PARK */
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600&display=swap');
 
+
+/* GLOBAL CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* LANDING-CONTENT */
 
 #landing-content {
   width: 100vw;

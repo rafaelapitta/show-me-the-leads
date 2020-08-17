@@ -28,6 +28,7 @@ function Landing() {
             type="text"
             pattern="^\D{2,}\s[\D\s]{2,}$"
             title="Digite seu nome completo"
+            placeholder='Nome'
             required
         />
         <br></br>
@@ -35,9 +36,12 @@ function Landing() {
         <input
           name="email"
           type="email"
+          placeholder='Email'
           required
         />
       </form>
+      {/* BOTÃO */}
+      <input type="submit"/>
       </div>
     </div>
 
