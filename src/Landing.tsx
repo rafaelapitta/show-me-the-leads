@@ -34,6 +34,18 @@ function Landing() {
             <img src={Check} alt="check"/>
             <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
           </div>
+          <div className="bullet">
+            <img src={Check} alt="check"/>
+            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+          </div>
+          <div className="bullet">
+            <img src={Check} alt="check"/>
+            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+          </div>
+          <div className="bullet">
+            <img src={Check} alt="check"/>
+            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+          </div>
         </div>
 
       {/* FORM */}

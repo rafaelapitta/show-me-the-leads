@@ -55,9 +55,17 @@ header {
   width: 50%;
 }
 
+.bullet {
+  display: flex;
+  align-items: center;
+}
+
 .bullet img {
   max-width: 1.5rem;
+  margin-right: 0.5rem;
 }
+
+/* SECTION FORMULÁRIO */
 
 .form {
   background-color: #5F45B3;
