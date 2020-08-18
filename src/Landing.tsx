@@ -19,8 +19,8 @@ function Landing() {
       {/* CONTENT */}
         <div className="content">
           <div className="title">
-            <p>Acesse o kit completo</p>
-            <h1>Dos brasileiros com dívidas, 58% são mulheres.</h1>
+            <p>ACESSE O KIT COMPLETO</p>
+            <h1>Dos brasileiros com dívidas, 58% são mulheres</h1>
           </div>
 
           <div className="are-the-one">
