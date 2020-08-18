@@ -48,10 +48,15 @@ header {
   flex-direction: row;
 }
 
+/* SECTION CONTENT */
 .content {
   background-color: #f4f4f4;
   height: 100vh;
   width: 50%;
+}
+
+.bullet img {
+  max-width: 1.5rem;
 }
 
 .form {
@@ -60,6 +65,23 @@ header {
   width: 50%;
 }
 
+/* FOOTER */
+footer {
+  width: 100vw;
+  height: 3rem;
+  background-color: #39296b;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MOBILE VERSION */
 @media (max-width:600px) {
   #landing-content {
     min-width: 600px;
@@ -76,11 +98,11 @@ header {
 
   .content {
     width: 100vw;
-    height: 20rem;
+    height: 30rem;
   }
 
   .form {
     width: 100vw;
-    height: 20rem;
+    height: 30rem;
   }
 }
