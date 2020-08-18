@@ -9,20 +9,6 @@ body {
   background: #eeeeee;
 }
 
-.row {
-  /* background: url("assets/fundo_roxo.png");
-  background-position: top right;
-  background-size: contain;
-  background-repeat: no-repeat; */
-}
-
-.content-col {
-}
-
-.form-col {
-  /* background: #eeeeee; */
-}
-
 /* LANDING-CONTENT */
 .logo {
   max-height: 4rem;
