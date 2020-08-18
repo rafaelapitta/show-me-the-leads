@@ -1,90 +1,85 @@
 import React from 'react';
+import './simple-grid.css';
 import './Landing.css';
 
-import Logo from './assets/logo-acredita.svg';
-import Check from './assets/check.svg';
+import Logo from './assets/logo_acredita_thin.png';
+import Check from './assets/check.png';
 
 function Landing() {
   return (
-    <div id="landing-content">
-      <div className="background">
-        <header>
-          <div className="logo-container">
-            <img className="logo" src={Logo} alt="Logo Acredita Nelas"/>
-          </div>
-        </header>
-      </div>
-    
-    <div id="sections">
-      {/* CONTENT */}
-        <div className="content">
+    <div className="container-fluid">
+      <div className="row">
+        {/* CONTENT */}
+        <div className="col-lg-7 content-col">
+          {/* <div className="logo-container">
+            
+          </div> */}
+
+          <img className="logo" src={Logo} alt="Logo Acredita Nelas" />
+
           <div className="title">
-            <p>Acesse o kit completo</p>
+            <span className="superscript">Acesse o kit completo</span>
             <h1>Dos brasileiros com dívidas, 58% são mulheres.</h1>
           </div>
 
           <div className="are-the-one">
-            <h1>Você é uma delas?</h1>
-            <p>O Acredita Nelas surgiu da iniciativa de mulheres que identificaram a necessidade de 
-              empoderar outras mulheres através de conhecimento e ferramentas sobre a vida financeira.
-              <br></br>No nosso conteúdo você vai encontrar:</p>
+            <h2>Você é uma delas?</h2>
+            <p>O Acredita Nelas surgiu da iniciativa de mulheres que identificaram a necessidade de
+            empoderar outras mulheres através de conhecimento e ferramentas sobre a vida financeira.</p>
+
+            <p>No nosso conteúdo você vai encontrar:</p>
           </div>
 
           <div className="bullet">
-            <img src={Check} alt="check"/>
-            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+            <img src={Check} alt="check" />
+            <span>Finanças x emoções: Como nossa cabeça age no bolso?</span>
           </div>
           <div className="bullet">
-            <img src={Check} alt="check"/>
-            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+            <img src={Check} alt="check" />
+            <span>Por que e como alcançar a inteligência financeira!</span>
           </div>
           <div className="bullet">
-            <img src={Check} alt="check"/>
-            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+            <img src={Check} alt="check" />
+            <span>Juros? Linhas de crédito? O que fazer?</span>
           </div>
           <div className="bullet">
-            <img src={Check} alt="check"/>
-            <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
+            <img src={Check} alt="check" />
+            <span>Renda extra: transformando ativos em passivos</span>
           </div>
 
-          <div id="bonus">
-            <h1>Bonus</h1>
-            <p>Três planilhas sensacionais para planejamento de orçamento e seus sonhos!</p>
+          <div className="bonus">
+            <h4>Bonus</h4>
+            <span>Três planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
           </div>
         </div>
 
-      {/* FORM */}
-        <div className="form">
-        <h1>Dê um passo à sua independencia financeira!</h1>
-        <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
-        
-        <label htmlFor="Nome"></label>
-        <input
-            name="name"
-            type="text"
-            pattern="^\D{2,}\s[\D\s]{2,}$"
-            title="Digite seu nome completo"
-            placeholder='Nome'
-            required
-        />
-        <br></br>
-        <label htmlFor="Email"></label>
-        <input
-          name="email"
-          type="email"
-          placeholder='Email'
-          required
-        />
-      </form>
-      {/* BOTÃO */}
-      <input type="submit"/>
+        {/* FORM */}
+        <div className="col-lg-5 form-col">
+          <h3>Dê um passo à sua independencia financeira!</h3>
+          <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
+
+            <label htmlFor="Nome"></label>
+            <input
+              name="name"
+              type="text"
+              pattern="^\D{2,}\s[\D\s]{2,}$"
+              title="Digite seu nome completo"
+              placeholder='Nome'
+              required
+            />
+            <br></br>
+            <label htmlFor="Email"></label>
+            <input
+              name="email"
+              type="email"
+              placeholder='Email'
+              required
+            />
+          </form>
+          {/* BOTÃO */}
+          <input type="submit" />
+        </div>
       </div>
-    </div>
-    
-    <footer>
-      <p>All right reserved</p>
-      <a href="#landing-content">Back to Top</a>
-    </footer>
     </div>
   );
 }
