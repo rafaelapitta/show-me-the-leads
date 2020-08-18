@@ -3,7 +3,7 @@ import './simple-grid.css';
 import './Landing.css';
 
 import Logo from './assets/logo_acredita_thin.png';
-import Check from './assets/check.png';
+import Check from './assets/check.svg';
 
 function Landing() {
   return (
@@ -54,12 +54,15 @@ function Landing() {
         </div>
 
         {/* FORM */}
+        
         <div className="col-lg-5 form-col">
+          <div id="form">
           <h3>Dê um passo à sua independencia financeira!</h3>
           <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
 
             <label htmlFor="Nome"></label>
             <input
+              className="campos"
               name="name"
               type="text"
               pattern="^\D{2,}\s[\D\s]{2,}$"
@@ -70,6 +73,7 @@ function Landing() {
             <br></br>
             <label htmlFor="Email"></label>
             <input
+              className="campos"
               name="email"
               type="email"
               placeholder='Email'
@@ -77,9 +81,14 @@ function Landing() {
             />
           </form>
           {/* BOTÃO */}
-          <input type="submit" />
+          <input id="submit" type="submit" value="Enviar respostas"/>
+        </div>
         </div>
       </div>
+
+      <footer id="footer">
+        <p>Garanta sua independencia financeira hoje!</p>
+      </footer>
     </div>
   );
 }
