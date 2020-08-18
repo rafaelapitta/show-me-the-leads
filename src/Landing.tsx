@@ -46,6 +46,11 @@ function Landing() {
             <img src={Check} alt="check"/>
             <p>Finanças x emoções: Como nossa cabeça age no bolso?</p>
           </div>
+
+          <div id="bonus">
+            <h1>Bonus</h1>
+            <p>Três planilhas sensacionais para planejamento de orçamento e seus sonhos!</p>
+          </div>
         </div>
 
       {/* FORM */}

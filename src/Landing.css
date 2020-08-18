@@ -65,6 +65,12 @@ header {
   margin-right: 0.5rem;
 }
 
+#bonus {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
 /* SECTION FORMULÁRIO */
 
 .form {
