@@ -17,6 +17,22 @@ function Landing() {
     navigate('/thank-you')
   }
 
+//   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+//     e.preventDefault();
+
+//     const name = e.currentTarget["name"].value;
+//     const email = e.currentTarget["email"].value;
+
+//     if (name.length < 3) {
+//       alert("Seu nome precisa ter 3 caracteres!");
+//       return;
+//     }
+
+//     if (email.length < 5) {
+//       alert("Seu e-mail precisa ter 5 caracteres!");
+//       return;
+//     }
+// }
 
   return (
     <div className="container-fluid h-100 pl-xs-0 pr-xs-0">
@@ -69,7 +85,7 @@ function Landing() {
             <img src={LogoWhite} alt="Braço branco da Acredita Nelas" className="logo1 mx-auto d-block" />
             <h3 className="mb-4">Dê um passo à sua independencia financeira!</h3>
 
-            <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
+            <form  method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
               <input
                 className="form-control"
                 name="name"
@@ -89,8 +105,9 @@ function Landing() {
               />
 
               {/* WHATCH OUT */}
-              <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={doSubmit}>
-              </input>
+              <button id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={doSubmit}>
+              BAIXAR MEU KIT AGORA
+              </button>
             </form>
             <img className="mx-auto d-block" src={Mulher} alt=""></img>
           </div>
