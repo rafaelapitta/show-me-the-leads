@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+
+
+#page {
+  display: flex;
+  justify-content: center;
+  background-color: #5F45B2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header img {
+  display: flex;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+ h2 {
+  display: flex;  
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+main a {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+#baixar {
+  text-decoration: none;
+  background-color: #493688;
+  padding: 3rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: white;
+}
+
+#baixar:hover {
+  background-color: #533d9b;
+}
+
+#compartilhar {
+  display: flex;
+  justify-content: center;
+
+
+  text-decoration: none;
+  background-color: #39c970;
+  padding: 3rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: white;
+}
+
+#compartilhar:hover {
+  background-color: #30b162;
+}
