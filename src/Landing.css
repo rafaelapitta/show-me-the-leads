@@ -1,12 +1,45 @@
-/* BALOO TAMA */
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap");
-/* LATO */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap');
 
 /* STRUCTURE */
+html {
+  height: 100%;
+}
+
 body {
   color: #424242;
   background: #eeeeee;
+  height: 100%;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: normal
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+/* FORM */
+.btn-success {
+  background: #5FAC52;
+  border: 1px solid #2e6b24;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+button, input {
+  font-family: 'Roboto', serif;
+}
+
+/* HEADERS */
+h1,h2,h3,h4 {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* LANDING-CONTENT */
@@ -14,6 +47,12 @@ body {
   max-height: 4rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+}
+
+.logo1 {
+  max-height: 6rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .title .superscript {
@@ -28,22 +67,24 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #5F45B2;
+  font-weight: bold;
 }
+
+.are-the-one h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 
 .are-the-one p {
   line-height: 1.5rem;
 }
 
-.bullet {
-  display: flex;
-  align-content: center;
-  margin-bottom: 0.5rem;
+.bullet img {
+  margin-right: 10px;
 }
 
-.bullet img {
-  max-width: 1.5rem;
-  margin-right: 0.5rem;
-}
 .bonus {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -54,40 +95,27 @@ body {
   color: #5FAC52;
   text-transform: uppercase;
   margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .bonus span {
   font-weight: bold;
 }
 
-.form-col {
-  background-color: #5F45B2;
+.col-lg-5.form-col {
+  background: #5F45B3;
+  min-height: 100%;
+}
+
+.col-lg-5.form-col h3 {
+  align-content: center;
+  color: #EEEEEE; 
+  margin-top: 10;
+  height: 100hv;
 }
 
 
-/* FORMULÁRIO */
-h3 {
-  color: white;
-}
 
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
-  background-color: #f4f4f4;
-  border: none;
-  outline: none;
-  border-radius: 0.1rem;
-}
-
-.campos {
-  padding: 1rem 12.5rem 1rem 0.5rem;
-  margin-bottom: 0.5rem;
-}
 
 #submit {
   cursor: pointer;
@@ -97,13 +125,5 @@ input {
   margin-bottom: 1rem;
 }
 
-/* FOOTER */
 
-#footer {
-  margin: 0;
-}
 
-footer {
-  background-color: #49358a;
-  width: 100vw;
-}

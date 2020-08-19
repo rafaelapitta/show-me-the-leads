@@ -4,7 +4,8 @@ import './Landing.css';
 import { useNavigate } from 'react-router-dom';
 
 import Logo from './assets/logo_acredita_thin.png';
-import Check from './assets/check.svg';
+import Check from './assets/check.png';
+
 
 function Landing() {
   const navigate = useNavigate()
@@ -12,13 +13,11 @@ function Landing() {
     navigate('/thank-you')
   }
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid h-100 pl-xs-0 pr-xs-0">
+      <div className="row h-100">
         {/* CONTENT */}
-        <div className="col-lg-7 content-col">
-          {/* <div className="logo-container">
-            
-          </div> */}
+        <div className="col-lg-7 content-col pl-lg-5 pr-lg-5">
+          
 
           <img className="logo" src={Logo} alt="Logo Acredita Nelas" />
 
@@ -53,13 +52,12 @@ function Landing() {
           </div>
 
           <div className="bonus">
-            <h4>Bonus</h4>
-            <span>Três planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
+            <h4>Bonus:</h4>
+            <span>Duas planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
           </div>
         </div>
 
         {/* FORM */}
-
         <div className="col-lg-5 form-col">
           <div id="form">
             <h3>Dê um passo à sua independencia financeira!</h3>
@@ -93,10 +91,6 @@ function Landing() {
           </div>
         </div>
       </div>
-
-      <footer id="footer">
-        <p>Garanta sua independencia financeira hoje!</p>
-      </footer>
     </div>
   );
 }
