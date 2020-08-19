@@ -89,7 +89,6 @@ function Landing() {
               </div>
             </form>
             {/* BOTÃO */}
-            <input name="debugMode" type="hidden" value="true" />
             <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
 
               {/* <Agradecimento /> */}
