@@ -4,7 +4,9 @@ import './Landing.css';
 import { useNavigate } from 'react-router-dom';
 
 import Logo from './assets/logo_acredita_thin.png';
+import LogoWhite from './assets/logo_acredita_thin_white.png';
 import Check from './assets/check.png';
+import Mulher from './assets/mulher.png';
 
 
 function Landing() {
@@ -58,36 +60,40 @@ function Landing() {
         </div>
 
         {/* FORM */}
-        <div className="col-lg-5 form-col">
+        <div className="col-lg-5 pl-lg-5 pr-lg-5 form-col">
           <div id="form">
-            <h3>Dê um passo à sua independencia financeira!</h3>
+            <img src={LogoWhite} alt="Braço branco da Acredita Nelas" className="logo1 mx-auto d-block"/>
+            <h3 className="mb-4">Dê um passo à sua independencia financeira!</h3>
             <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
 
-              <label htmlFor="Nome"></label>
-              <input
-                className="campos"
-                name="name"
-                type="text"
-                pattern="^\D{2,}\s[\D\s]{2,}$"
-                title="Digite seu nome completo"
-                placeholder='Nome'
-                required
-              />
-              <br></br>
-              <label htmlFor="Email"></label>
-              <input
-                className="campos"
-                name="email"
-                type="email"
-                placeholder='Email'
-                required
-              />
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  name="name"
+                  type="text"
+                  pattern="^\D{2,}\s[\D\s]{2,}$"
+                  title="Digite seu nome completo"
+                  placeholder='Digite seu nome completo'
+                  required
+                />
+              </div>
+              
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  name="email"
+                  type="email"
+                  placeholder='Digite seu melhor email'
+                  required
+                />
+              </div>
             </form>
             {/* BOTÃO */}
-            <input id="submit" type="submit" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
+            <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
 
               {/* <Agradecimento /> */}
             </input>
+            <img className="mx-auto d-block" src={Mulher} alt=""></img>
           </div>
         </div>
       </div>
