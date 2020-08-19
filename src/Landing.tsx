@@ -10,16 +10,16 @@ import Mulher from './assets/mulher.png';
 
 
 function Landing() {
-  const navigate = useNavigate()
-  function handleSubmit() {
-    navigate('https://drive.google.com/drive/folders/1kqkYZgF-Smw6nK_uzb4fnk9SQKAGT8-2')
-  }
+  // const navigate = useNavigate()
+  // function handleSubmit() {
+  //   navigate('https://drive.google.com/drive/folders/1kqkYZgF-Smw6nK_uzb4fnk9SQKAGT8-2')
+  // }
   return (
     <div className="container-fluid h-100 pl-xs-0 pr-xs-0">
       <div className="row h-100">
         {/* CONTENT */}
         <div className="col-lg-7 content-col pl-lg-5 pr-lg-5">
-          
+
 
           <img className="logo" src={Logo} alt="Logo Acredita Nelas" />
 
@@ -62,7 +62,7 @@ function Landing() {
         {/* FORM */}
         <div className="col-lg-5 pl-lg-5 pr-lg-5 form-col">
           <div id="form">
-            <img src={LogoWhite} alt="Braço branco da Acredita Nelas" className="logo1 mx-auto d-block"/>
+            <img src={LogoWhite} alt="Braço branco da Acredita Nelas" className="logo1 mx-auto d-block" />
             <h3 className="mb-4">Dê um passo à sua independencia financeira!</h3>
             <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
 
@@ -77,7 +77,7 @@ function Landing() {
                   required
                 />
               </div>
-              
+
               <div className="form-group">
                 <input
                   className="form-control"
@@ -87,12 +87,15 @@ function Landing() {
                   required
                 />
               </div>
-            </form>
-            {/* BOTÃO */}
-            <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
 
-              {/* <Agradecimento /> */}
-            </input>
+              <input name="redirectTo" type="hidden" value="https://drive.google.com/drive/folders/1POzj6XYQq0vR_6f31kNY15k2BY439txc?usp=sharing" />
+              <input type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" />
+
+              {/* BOTÃO */}
+              {/* <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
+                {/* <Agradecimento /> */}
+              {/* </input> */}
+            </form>
             <img className="mx-auto d-block" src={Mulher} alt=""></img>
           </div>
         </div>
