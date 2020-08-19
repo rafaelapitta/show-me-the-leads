@@ -91,6 +91,10 @@ function Landing() {
           <img className="mx-auto d-block" src={Mulher} alt="" />
         </div>
       </div>
+
+      <footer id="footer">
+        <p>Garanta sua independencia financeira hoje!</p>
+      </footer>
     </div>
   );
 }
