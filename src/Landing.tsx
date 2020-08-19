@@ -12,7 +12,7 @@ import Mulher from './assets/mulher.png';
 function Landing() {
   const navigate = useNavigate()
   function handleSubmit() {
-    navigate('/thank-you')
+    navigate('https://drive.google.com/drive/folders/1kqkYZgF-Smw6nK_uzb4fnk9SQKAGT8-2')
   }
   return (
     <div className="container-fluid h-100 pl-xs-0 pr-xs-0">
