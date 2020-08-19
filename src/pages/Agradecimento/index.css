@@ -10,6 +10,8 @@
 }
 
 .title {
+  max-width: 400px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +27,8 @@ header img {
 
  h2 {
   display: flex;  
+  text-align: center;
+
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 2rem;

@@ -9,7 +9,7 @@ function Agradecimento() {
     <div id="page">
       <div className="title">
         <header>
-          <h2>Obrigada por baixar <br></br>o nosso material</h2>
+          <h2>Obrigada por baixar o nosso material</h2>
           <img src={Mulher} alt="" />
         </header>
       
