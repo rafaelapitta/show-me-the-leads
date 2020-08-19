@@ -90,6 +90,7 @@ input {
 }
 
 #submit {
+  cursor: pointer;
   background-color: #49358a;
   color: white;
   padding: 1rem 8rem 1rem 8rem;
