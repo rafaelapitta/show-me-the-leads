@@ -49,13 +49,13 @@ function Landing() {
 
           <div className="bonus">
             <h4>Bonus:</h4>
-            <span>Três planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
+            <span>Duas planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
           </div>
         </div>
 
         {/* FORM */}
         <div className="col-lg-5 pl-lg-5 pr-lg-5 form-col">
-          <img className="logo1" src={Logo1} alt="Logo Acredita Nelas Branco" />
+          <img className="logo1 mx-auto d-block" src={Logo1} alt="Logo Acredita Nelas Branco" />
           <h3 className="mb-4">Dê um passo rumo à sua independência financeira!</h3>
           <div className='form'>
             <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
@@ -91,10 +91,6 @@ function Landing() {
           <img className="mx-auto d-block" src={Mulher} alt="" />
         </div>
       </div>
-
-      <footer id="footer">
-        <p>Garanta sua independencia financeira hoje!</p>
-      </footer>
     </div>
   );
 }
