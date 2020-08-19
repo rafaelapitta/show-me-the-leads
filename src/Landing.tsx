@@ -23,34 +23,36 @@ function Landing() {
   const [email, setEmail] = useState('');
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-      e.preventDefault();
+    e.preventDefault();
 
-      if (name.length < 3) {
-        alert("Seu nome precisa ter 3 caracteres!");
-        return;
+    if (name.length < 3) {
+      alert("Seu nome precisa ter 3 caracteres!");
+      return;
+    }
+
+    if (email.length < 5) {
+      alert("Seu e-mail precisa ter 5 caracteres!");
+      return;
+    }
+
+    const params = {
+      name,
+      email
+    }
+
+    const data = Object.entries(params)
+      .map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
+      .join('&');
+
+    
+    const response = await axios.post('https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc', data, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
-
-      if (email.length < 5) {
-        alert("Seu e-mail precisa ter 5 caracteres!");
-        return;
-      }
-
-      const data = new FormData();
-
-      data.append('name', name);
-      data.append('email', email);
-      data.append('debugMode', 'true');
-      
-      const response = await axios.post('https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc', {
-        params: {
-          name,
-          email,
-          debugMode: true
-        }
-       }) 
-           
-    navigate('/thank-you')
+    }) 
+          
     console.log(response.data)
+    navigate('/thank-you')
   }
 
   return (
