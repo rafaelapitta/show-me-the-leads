@@ -2,6 +2,8 @@ import React from 'react';
 import './simple-grid.css';
 import './Landing.css';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios'
 
 
 
@@ -17,22 +19,29 @@ function Landing() {
     navigate('/thank-you')
   }
 
-//   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-//     e.preventDefault();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
-//     const name = e.currentTarget["name"].value;
-//     const email = e.currentTarget["email"].value;
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+      e.preventDefault();
 
-//     if (name.length < 3) {
-//       alert("Seu nome precisa ter 3 caracteres!");
-//       return;
-//     }
+      if (name.length < 3) {
+        alert("Seu nome precisa ter 3 caracteres!");
+        return;
+      }
 
-//     if (email.length < 5) {
-//       alert("Seu e-mail precisa ter 5 caracteres!");
-//       return;
-//     }
-// }
+      if (email.length < 5) {
+        alert("Seu e-mail precisa ter 5 caracteres!");
+        return;
+      }
+
+      const response = await axios.post('https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc', {
+      email,
+      name,
+    }) 
+    navigate('/thank-you')
+    console.log(response.data)
+  }
 
   return (
     <div className="container-fluid h-100 pl-xs-0 pr-xs-0">
@@ -85,10 +94,12 @@ function Landing() {
             <img src={LogoWhite} alt="Braço branco da Acredita Nelas" className="logo1 mx-auto d-block" />
             <h3 className="mb-4">Dê um passo à sua independencia financeira!</h3>
 
-            <form  method="POST" action="https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc">
+            <form onSubmit={handleSubmit}>
               <input
                 className="form-control"
                 name="name"
+                value={name}
+                onChange={e => setName(e.target.value)}
                 type="text"
                 pattern="^\D{2,}\s[\D\s]{2,}$"
                 title="Digite seu nome completo"
@@ -99,6 +110,8 @@ function Landing() {
               <input
                 className="form-control"
                 name="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
                 type="email"
                 placeholder='Digite seu melhor email'
                 required
@@ -106,7 +119,7 @@ function Landing() {
 
               {/* WHATCH OUT */}
               <button id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={doSubmit}>
-              BAIXAR MEU KIT AGORA
+                BAIXAR MEU KIT AGORA
               </button>
             </form>
             <img className="mx-auto d-block" src={Mulher} alt=""></img>
