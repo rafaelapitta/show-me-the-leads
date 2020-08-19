@@ -88,11 +88,8 @@ function Landing() {
                 />
               </div>
 
-              <input name="redirectTo" type="hidden" value="https://drive.google.com/drive/folders/1POzj6XYQq0vR_6f31kNY15k2BY439txc?usp=sharing" />
-
               {/* BOTÃO */}
               <input id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={handleSubmit}>
-
               </input>
             </form>
             <img className="mx-auto d-block" src={Mulher} alt=""></img>
