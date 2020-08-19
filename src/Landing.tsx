@@ -15,9 +15,9 @@ import Mulher from './assets/mulher.png';
 
 function Landing() {
   const navigate = useNavigate()
-  function doSubmit() {
-    navigate('/thank-you')
-  }
+  // function doSubmit() {
+  //   navigate('/thank-you')
+  // }
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -35,10 +35,20 @@ function Landing() {
         return;
       }
 
+      const data = new FormData();
+
+      data.append('name', name);
+      data.append('email', email);
+      data.append('debugMode', 'true');
+      
       const response = await axios.post('https://smtl.gama.academy/leads/7f2b6f21-dcac-11ea-91f1-99fb0c9231dc', {
-      email,
-      name,
-    }) 
+        params: {
+          name,
+          email,
+          debugMode: true
+        }
+       }) 
+           
     navigate('/thank-you')
     console.log(response.data)
   }
@@ -118,7 +128,7 @@ function Landing() {
               />
 
               {/* WHATCH OUT */}
-              <button id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA" onClick={doSubmit}>
+              <button id="submit" type="submit" className="button btn btn-block btn-success btn-lg" value="BAIXAR MEU KIT AGORA">
                 BAIXAR MEU KIT AGORA
               </button>
             </form>
