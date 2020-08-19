@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
 
-
-
 import Logo from './assets/logo_acredita_thin.png';
 import LogoWhite from './assets/logo_acredita_thin_white.png';
 import Check from './assets/check.png';
