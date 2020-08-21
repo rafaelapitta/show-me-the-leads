@@ -55,17 +55,17 @@ h1,h2,h3,h4 {
   margin-left: 2rem;
 }
 
-.title .superscript {
+.title-lp .superscript {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.title h1 {
+.title-lp h1 {
   font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: -1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #5F45B2;
   font-weight: bold;
 }
@@ -104,6 +104,10 @@ h1,h2,h3,h4 {
 }
 
 .bonus span {
+  font-weight: bold;
+}
+
+.cadastre-se span {
   font-weight: bold;
 }
 

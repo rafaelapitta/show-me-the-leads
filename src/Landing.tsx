@@ -62,9 +62,9 @@ function Landing() {
 
           <img className="logo" src={Logo} alt="Logo Acredita Nelas" />
 
-          <div className="title">
+          <div className="title-lp">
             <span className="superscript">Acesse o kit completo</span>
-            <h1>Dos brasileiros com dívidas, 58% são mulheres.</h1>
+            <h1>Entre os endividados, 58% são mulheres.</h1>
           </div>
 
           <div className="are-the-one">
@@ -72,7 +72,7 @@ function Landing() {
             <p>O Acredita Nelas surgiu da iniciativa de mulheres que identificaram a necessidade de
             empoderar outras mulheres através de conhecimento e ferramentas sobre a vida financeira.</p>
 
-            <p>No nosso conteúdo você vai encontrar:</p>
+            <p>Esse kit vai guiar seus passos rumo à independência financeira, mostrando:</p>
           </div>
 
           <div className="bullet">
@@ -81,11 +81,11 @@ function Landing() {
           </div>
           <div className="bullet">
             <img src={Check} alt="check" />
-            <span>Por que e como alcançar a inteligência financeira!</span>
+            <span>Porque e como alcançar a inteligência financeira!</span>
           </div>
           <div className="bullet">
             <img src={Check} alt="check" />
-            <span>Juros? Linhas de crédito? O que fazer?</span>
+            <span>Como as taxas afetam suas finanças.</span>
           </div>
           <div className="bullet">
             <img src={Check} alt="check" />
@@ -96,6 +96,12 @@ function Landing() {
             <h4>Bonus:</h4>
             <span>Duas planilhas sensacionais para planejamento de orçamento e seus sonhos!</span>
           </div>
+
+          <div className="cadastre-se">
+            <span>Curtiu? Cadastre-se e garanta o kit!</span>
+          
+          </div>
+
         </div>
 
         {/* FORM */}
