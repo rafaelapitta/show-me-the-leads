@@ -89,7 +89,7 @@ function Landing() {
           </div>
           <div className="bullet">
             <img src={Check} alt="check" />
-            <span>Renda extra: transformando passivos em ativos</span>
+            <span>Renda extra: transformando passivos em ativos.</span>
           </div>
 
           <div className="bonus">
